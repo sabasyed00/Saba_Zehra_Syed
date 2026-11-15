@@ -1,22 +1,17 @@
-# Saba Zehra Syed — Portfolio
+# Saba Zehra Syed — Updated Portfolio
 
-A responsive static portfolio built with HTML, CSS and JavaScript.
+Updated portfolio source files with:
+- Refreshed homepage introduction mentioning Dataiku DSS and ETL/analytics experience.
+- Dataiku added to the technical skills page.
+- A dedicated Certifications page listing all credentials supplied.
+- Updated D.One experience on the Experience page.
+- Updated resume in `assets/files/` in DOCX and PDF formats.
 
-## Preview locally
+## Run locally
+Open `index.html` in a browser. Keep the folder structure intact.
 
-Open `index.html` in a browser. Keep the folder structure intact so styles, scripts, images and the resume load correctly.
+## Assets
+The uploaded source set referenced `assets/css/main.css`, `assets/js/main.js`, and the `images/` directory, but those folders were not part of the supplied upload. Copy your existing folders into this package before publishing so styling, menu behaviour, portrait and favicon continue to load.
 
-## Publish with GitHub Pages
-
-Upload the contents of this folder to the publishing root of the GitHub repository, then configure **Settings → Pages** to use the correct branch and folder.
-
-## Before publishing
-
-- Confirm dates, project descriptions and skills are accurate.
-- Check the external links and resume download.
-- Keep the image, CSS, JavaScript and `assets/files` directories in place.
-
-
-## Publishing
-
-This portfolio is intended for the GitHub Pages project site at `https://sabasyed00.github.io/Saba_Zehra_Syed/`. Publish the contents of this folder from the `main` branch at the repository root. Keep `index.html` at the root and retain the `assets/` and `images/` folders.
+## Publish
+Upload the contents of this folder to the root of the GitHub Pages repository. Keep `index.html` at the root and retain `assets/` and `images/`.
