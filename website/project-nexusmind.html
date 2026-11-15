@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>NexusMind — Clinical RAG System | Saba Zehra Syed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="description"
+          content="NexusMind — AI-driven clinical retrieval system designed by Saba Zehra Syed. A medical RAG model integrating Llama-2 and Gemma to provide accurate, evidence-based insights." />
+    <meta name="keywords"
+          content="NexusMind, RAG, Llama-2, Gemma, AI Healthcare, Clinical NLP, Data Science Project, Saba Zehra Syed" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      body{scroll-behavior:smooth;}
+      #header{text-align:center;padding:3rem 1rem;}
+      #header h1{margin-bottom:.5rem;}
+      #header p{opacity:.9;max-width:720px;margin:0 auto 1.2rem;}
+      section.main.special{padding:3rem 1rem;}
+      .muted{opacity:.85;}
+
+      .feature-card{
+        border:1px solid #d0d7de;border-radius:12px;padding:2rem;
+        background:#fafbfc;text-align:center;
+        box-shadow:0 2px 6px rgba(0,0,0,.08);
+        transition:all .3s ease;
+        opacity:0;transform:translateY(20px);
+        animation:fadeUp .7s ease forwards;
+      }
+      @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+      .feature-card:hover{
+        transform:translateY(-4px);
+        box-shadow:0 6px 18px rgba(0,0,0,.15);
+        background:linear-gradient(180deg,#ffffff 0%,#f0f8ff 100%);
+      }
+      .feature-card i{font-size:1.8rem;margin-bottom:.6rem;color:#0074d9;}
+      .button{
+        border-radius:8px!important;
+        box-shadow:0 2px 5px rgba(0,0,0,.15);
+        transition:all .25s;
+        display:inline-flex;align-items:center;gap:.35rem;
+        font-size:.9rem;
+      }
+      .button:hover{
+        transform:translateY(-3px);
+        box-shadow:0 5px 12px rgba(0,0,0,.25);
+        filter:brightness(1.08);
+      }
+      .button.small{padding:.5rem .9rem;font-size:.85rem;}
+      ul.actions.special{justify-content:center;}
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <h1><i class="fa-solid fa-brain"></i> NexusMind — Clinical RAG System</h1>
+        <p>AI-powered retrieval system for contextual, evidence-based clinical insights.</p>
+        <ul class="actions special">
+          <li><a href="projects.html" class="button small icon solid fa-arrow-left">Back to All Projects</a></li>
+        </ul>
+      </header>
+
+      <div id="main">
+
+        <!-- Why -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-bullseye"></i> Why This Project Matters</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            In clinical settings, professionals often face information overload — with fragmented guidelines, publications, and patient records scattered across multiple systems.  
+            <b>NexusMind</b> was designed to solve this challenge by enabling contextual and verified clinical reasoning through Retrieval-Augmented Generation (RAG).  
+            The goal was to create a system that could provide fast, explainable, and traceable AI-assisted insights for healthcare practitioners.
+          </p>
+        </section>
+
+        <!-- What -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-gears"></i> What It Does</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            NexusMind combines a retrieval pipeline and a generative model to process complex medical queries.  
+            It retrieves relevant research papers, clinical summaries, or case references and generates concise, referenced responses.  
+            The system is equipped with real-time context evaluation, citation mapping, and API integration for healthcare data sources.
+          </p>
+        </section>
+
+        <!-- How -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-flask"></i> How It Works</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            The backend is powered by a <b>FastAPI</b> microservice integrated with <b>Llama-2</b> and <b>Gemma</b> language models.  
+            A hybrid retrieval mechanism (semantic + keyword-based) fetches relevant data from a vector database using <b>FAISS</b>.  
+            Query prompts are augmented with metadata for improved accuracy and fed into the model through a context window limited to domain-specific content.  
+            Response generation emphasizes explainability — each answer links back to the original source text for transparency.
+          </p>
+
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            <b>Evaluation:</b> Model responses were validated using domain QA pairs and medical evaluation benchmarks (BioASQ, PubMedQA).  
+            The system achieved <b>89% factual accuracy</b> and a <b>precision rate of 92%</b> on test cases compared to traditional QA baselines.
+          </p>
+        </section>
+
+        <!-- Outcome -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-chart-line"></i> Outcomes & Impact</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            NexusMind demonstrated the feasibility of scalable, transparent AI systems for clinical knowledge retrieval.  
+            The project reinforced the importance of explainable AI in healthcare — promoting reliability and accountability in decision-support systems.  
+            Beyond technical success, the framework serves as a blueprint for developing ethical AI tools aligned with healthcare standards and SDG 3: Good Health & Well-Being.
+          </p>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-toolbox"></i> Tech Stack & Tools</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            <i class="fa-brands fa-python"></i> Python • <i class="fa-solid fa-brain"></i> Llama-2 / Gemma  
+            • <i class="fa-solid fa-database"></i> FAISS Vector DB • <i class="fa-solid fa-network-wired"></i> FastAPI  
+            • <i class="fa-solid fa-microchip"></i> RAG Framework • <i class="fa-solid fa-file-code"></i> LangChain  
+            • <i class="fa-solid fa-laptop-code"></i> VS Code / Jupyter • <i class="fa-solid fa-cloud"></i> AWS EC2 (Deployment)
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="main special">
+          <ul class="actions special">
+            <li><a href="projects.html" class="button small icon solid fa-diagram-project">View All Projects</a></li>
+            <li><a href="tech.html" class="button small icon solid fa-microchip">Technical Toolkit</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer" style="text-align:center;">
+        <p>Design base: <a href="https://html5up.net">HTML5 UP</a> (Stellar) | Customized by Saba Zehra Syed</p>
+        <p class="copyright">&copy; <span id="year"></span> Saba Zehra Syed</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </body>
+</html>

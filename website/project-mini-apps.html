@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Innominion Mini App Suite | Saba Zehra Syed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="description"
+          content="Innominion Mini App Suite — AI-based innovation project led by Saba Zehra Syed. A prototype ecosystem for mobility, accessibility, and digital inclusion that won 2nd place nationally." />
+    <meta name="keywords"
+          content="Innominion, Mini Apps, Hackathon, AI, Mobility, Accessibility, Innovation, Saba Zehra Syed, App Development, Data Science" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      body{scroll-behavior:smooth;}
+      #header{text-align:center;padding:3rem 1rem;}
+      #header h1{margin-bottom:.5rem;}
+      #header p{opacity:.9;max-width:720px;margin:0 auto 1.2rem;}
+      section.main.special{padding:3rem 1rem;}
+      .muted{opacity:.85;}
+
+      .feature-card{
+        border:1px solid #d0d7de;border-radius:12px;padding:2rem;
+        background:#fafbfc;text-align:center;
+        box-shadow:0 2px 6px rgba(0,0,0,.08);
+        transition:all .3s ease;
+        opacity:0;transform:translateY(20px);
+        animation:fadeUp .7s ease forwards;
+      }
+      @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+      .feature-card:hover{
+        transform:translateY(-4px);
+        box-shadow:0 6px 18px rgba(0,0,0,.15);
+        background:linear-gradient(180deg,#ffffff 0%,#f0f8ff 100%);
+      }
+      .feature-card i{font-size:1.8rem;margin-bottom:.6rem;color:#0074d9;}
+      .button{
+        border-radius:8px!important;
+        box-shadow:0 2px 5px rgba(0,0,0,.15);
+        transition:all .25s;
+        display:inline-flex;align-items:center;gap:.35rem;
+        font-size:.9rem;
+      }
+      .button:hover{
+        transform:translateY(-3px);
+        box-shadow:0 5px 12px rgba(0,0,0,.25);
+        filter:brightness(1.08);
+      }
+      .button.small{padding:.5rem .9rem;font-size:.85rem;}
+      ul.actions.special{justify-content:center;}
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <h1><i class="fa-solid fa-diagram-project"></i> Innominion Mini App Suite</h1>
+        <p>AI-based mobility and accessibility ecosystem — awarded 2nd place nationally at Innominion 2021.</p>
+        <ul class="actions special">
+          <li><a href="projects.html" class="button small icon solid fa-arrow-left">Back to All Projects</a></li>
+        </ul>
+      </header>
+
+      <div id="main">
+
+        <!-- Why -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-bullseye"></i> Why This Project Matters</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            During the <b>Innominion 2021 Hackathon</b>, the challenge was to create scalable “mini-apps” solving day-to-day social and mobility issues.  
+            Our team envisioned a connected ecosystem called <b>Mini App Suite</b> — lightweight, AI-assisted applications designed for transportation, accessibility, and daily resource management.  
+            The initiative sought to promote <b>inclusive technology</b> with minimal hardware requirements.
+          </p>
+        </section>
+
+        <!-- What -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-gears"></i> What It Does</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            The suite included three key AI-powered applications:
+          </p>
+          <ul style="max-width:700px;margin:0 auto 2rem;text-align:left;" class="muted">
+            <li>🚕 <b>ReturnRide:</b> A smart carpooling app using AI to suggest eco-efficient shared return trips.</li>
+            <li>🗣️ <b>VoiceAid:</b> A speech-to-text accessibility tool for visually and hearing-impaired users.</li>
+            <li>🛒 <b>QuickMart:</b> A predictive inventory tracker for small retailers using demand forecasting.</li>
+          </ul>
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            All apps were developed with a unified API and minimalistic UI design, making them easy to deploy on low-bandwidth networks or entry-level Android devices.
+          </p>
+        </section>
+
+        <!-- How -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-flask"></i> How It Works</h2>
+          </header>
+          <ul style="max-width:700px;margin:0 auto 2rem;text-align:left;" class="muted">
+            <li>🧠 Built modular backends using <b>Flask</b> and <b>FastAPI</b> for real-time inference and RESTful communication.</li>
+            <li>📱 Integrated <b>TensorFlow Lite</b> models for on-device processing to ensure offline accessibility.</li>
+            <li>🔍 Applied <b>GeoPy</b> and <b>Google Maps API</b> for distance and route optimization in ReturnRide.</li>
+            <li>🎙️ Developed a multilingual <b>Speech Recognition</b> feature with <b>Vosk</b> and <b>gTTS</b>.</li>
+            <li>📊 Deployed QuickMart’s inventory model with <b>Prophet</b> and <b>Flask dashboards</b> for vendor analysis.</li>
+          </ul>
+
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            The combined suite was packaged as a lightweight Android APK using <b>Kivy</b> and <b>Buildozer</b>, enabling offline-first functionality.
+          </p>
+        </section>
+
+        <!-- Outcome -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-chart-line"></i> Outcomes & Impact</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            The Mini App Suite secured <b>2nd place nationally in India</b> at the Innominion 2021 Hackathon.  
+            Judges recognized it for its <b>technical feasibility, social utility, and lightweight architecture</b>.  
+            The project showcased scalable design thinking — proving that AI-based innovation can serve accessibility and sustainability goals in emerging markets.
+          </p>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-toolbox"></i> Tech Stack & Tools</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            <i class="fa-brands fa-python"></i> Python • <i class="fa-solid fa-brain"></i> TensorFlow Lite  
+            • <i class="fa-solid fa-microchip"></i> Flask / FastAPI • <i class="fa-solid fa-mobile-screen"></i> Kivy / Buildozer  
+            • <i class="fa-solid fa-map-location-dot"></i> Google Maps API • <i class="fa-solid fa-wave-square"></i> Prophet  
+            • <i class="fa-solid fa-robot"></i> Vosk / gTTS • <i class="fa-solid fa-laptop-code"></i> Android Emulator
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="main special">
+          <ul class="actions special">
+            <li><a href="projects.html" class="button small icon solid fa-diagram-project">View All Projects</a></li>
+            <li><a href="tech.html" class="button small icon solid fa-microchip">Technical Toolkit</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer" style="text-align:center;">
+        <p>Design base: <a href="https://html5up.net">HTML5 UP</a> (Stellar) | Customized by Saba Zehra Syed</p>
+        <p class="copyright">&copy; <span id="year"></span> Saba Zehra Syed</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Fire-Detect — Lightweight CNN | Saba Zehra Syed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="description"
+          content="Fire-Detect — lightweight CNN model for real-time fire detection developed by Saba Zehra Syed. Achieved 94% precision using MobileNetV2 for edge deployment." />
+    <meta name="keywords"
+          content="Fire Detection, MobileNetV2, CNN, Deep Learning, Edge AI, Computer Vision, Image Classification, Data Science Project, Saba Zehra Syed" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+      body{scroll-behavior:smooth;}
+      #header{text-align:center;padding:3rem 1rem;}
+      #header h1{margin-bottom:.5rem;}
+      #header p{opacity:.9;max-width:720px;margin:0 auto 1.2rem;}
+      section.main.special{padding:3rem 1rem;}
+      .muted{opacity:.85;}
+
+      .feature-card{
+        border:1px solid #d0d7de;border-radius:12px;padding:2rem;
+        background:#fafbfc;text-align:center;
+        box-shadow:0 2px 6px rgba(0,0,0,.08);
+        transition:all .3s ease;
+        opacity:0;transform:translateY(20px);
+        animation:fadeUp .7s ease forwards;
+      }
+      @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+      .feature-card:hover{
+        transform:translateY(-4px);
+        box-shadow:0 6px 18px rgba(0,0,0,.15);
+        background:linear-gradient(180deg,#ffffff 0%,#f0f8ff 100%);
+      }
+      .feature-card i{font-size:1.8rem;margin-bottom:.6rem;color:#ff5733;}
+      .button{
+        border-radius:8px!important;
+        box-shadow:0 2px 5px rgba(0,0,0,.15);
+        transition:all .25s;
+        display:inline-flex;align-items:center;gap:.35rem;
+        font-size:.9rem;
+      }
+      .button:hover{
+        transform:translateY(-3px);
+        box-shadow:0 5px 12px rgba(0,0,0,.25);
+        filter:brightness(1.08);
+      }
+      .button.small{padding:.5rem .9rem;font-size:.85rem;}
+      ul.actions.special{justify-content:center;}
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <h1><i class="fa-solid fa-fire"></i> Fire-Detect — Lightweight CNN</h1>
+        <p>AI-powered edge model for rapid fire detection using MobileNetV2.</p>
+        <ul class="actions special">
+          <li><a href="projects.html" class="button small icon solid fa-arrow-left">Back to All Projects</a></li>
+        </ul>
+      </header>
+
+      <div id="main">
+
+        <!-- Why -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-bullseye"></i> Why This Project Matters</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            In disaster management, every second counts. Many existing fire detection systems rely on costly sensors or delayed manual reporting.  
+            <b>Fire-Detect</b> was developed to provide a low-cost, high-speed visual detection solution capable of identifying fires in real time using computer vision — designed for deployment on edge devices like Raspberry Pi and Jetson Nano.
+          </p>
+        </section>
+
+        <!-- What -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-gears"></i> What It Does</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            The system classifies input frames from surveillance feeds into “Fire” or “No Fire” categories using a lightweight convolutional neural network architecture (<b>MobileNetV2</b>).  
+            It processes images at <b>25 FPS</b> with real-time confidence scoring and can trigger alerts or notifications when fire is detected.  
+            Optimized for deployment on low-power devices, it maintains performance with minimal memory usage.
+          </p>
+        </section>
+
+        <!-- How -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-flask"></i> How It Works</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            The project followed a structured deep learning workflow:
+          </p>
+          <ul style="max-width:700px;margin:0 auto 2rem;text-align:left;" class="muted">
+            <li>📁 Collected a balanced dataset of <b>5,800 images</b> (open-source & curated frames).</li>
+            <li>🧠 Implemented <b>MobileNetV2</b> for transfer learning, fine-tuned with ReLU activation and dropout regularization.</li>
+            <li>⚙️ Used <b>TensorFlow</b> and <b>Keras</b> for model training with <b>Adam optimizer</b> and categorical cross-entropy loss.</li>
+            <li>📊 Applied data augmentation (rotation, brightness, and scale) to improve robustness.</li>
+            <li>📈 Deployed the model using <b>OpenCV</b> for live detection and bounding box visualization.</li>
+          </ul>
+
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            <b>Performance Metrics:</b> The final model achieved <b>94% precision</b>, <b>92% recall</b>, and an F1-score of <b>93%</b> — outperforming baseline CNNs by 15% in speed and accuracy.
+          </p>
+        </section>
+
+        <!-- Outcome -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-chart-line"></i> Outcomes & Impact</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto 2rem;">
+            Fire-Detect proved that deep learning can enhance early fire detection affordably.  
+            The system’s compact size and high accuracy make it deployable in both urban and industrial environments.  
+            It inspired further work on integrating environmental data and IoT systems to expand predictive emergency responses.
+          </p>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="main special">
+          <header class="major">
+            <h2><i class="fa-solid fa-toolbox"></i> Tech Stack & Tools</h2>
+          </header>
+          <p class="muted" style="max-width:750px;margin:0 auto;">
+            <i class="fa-brands fa-python"></i> Python • <i class="fa-solid fa-brain"></i> TensorFlow / Keras  
+            • <i class="fa-solid fa-laptop-code"></i> OpenCV • <i class="fa-solid fa-chart-line"></i> NumPy / Matplotlib  
+            • <i class="fa-solid fa-database"></i> Image Data Generator • <i class="fa-solid fa-network-wired"></i> Edge Deployment  
+            • <i class="fa-solid fa-microchip"></i> MobileNetV2 Architecture
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="main special">
+          <ul class="actions special">
+            <li><a href="projects.html" class="button small icon solid fa-diagram-project">View All Projects</a></li>
+            <li><a href="tech.html" class="button small icon solid fa-microchip">Technical Toolkit</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer" style="text-align:center;">
+        <p>Design base: <a href="https://html5up.net">HTML5 UP</a> (Stellar) | Customized by Saba Zehra Syed</p>
+        <p class="copyright">&copy; <span id="year"></span> Saba Zehra Syed</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+  </body>
+</html>
